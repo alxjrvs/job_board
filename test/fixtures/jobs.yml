@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  category: MyString
+  title: MyString
+  description: MyText
+  location: MyString
+  needed: 1
+  pay: 9.99
+  start: MyString
+  how: MyString
+
+two:
+  category: MyString
+  title: MyString
+  description: MyText
+  location: MyString
+  needed: 1
+  pay: 9.99
+  start: MyString
+  how: MyString
