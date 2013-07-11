@@ -1,14 +1,25 @@
 JobBoard::Application.routes.draw do
   resources :jobs
+  match "/categories", to: "static_pages#categories"
+  match "/childcare", to: "jobs#index", :category => "Child Care"
+  match "/computer", to: "jobs#index", :category => "Computer Help"
+  match "/general", to: "jobs#index", :category => "General"
+  match "/home-services", to: "jobs#index", :category => "Home Services"
+  match "/moving", to: "jobs#index", :category => "Moving"
+  match "party-help-catering", to: "jobs#index", :category => "Party Help/Catering"
+  match "/research-focus-group", to: "jobs#index", :category => "Research/ FocusGroup"
+  match "/yardwork", to: "jobs#index", :category => "Yardwork"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
+  #   match "products/:id" => "catalog#view"
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+  #   match "products/:id/purchase" => "catalog#purchase", :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
@@ -17,12 +28,12 @@ JobBoard::Application.routes.draw do
   # Sample resource route with options:
   #   resources :products do
   #     member do
-  #       get 'short'
-  #       post 'toggle'
+  #       get "short"
+  #       post "toggle"
   #     end
   #
   #     collection do
-  #       get 'sold'
+  #       get "sold"
   #     end
   #   end
 
@@ -36,7 +47,7 @@ JobBoard::Application.routes.draw do
   #   resources :products do
   #     resources :comments
   #     resources :sales do
-  #       get 'recent', :on => :collection
+  #       get "recent", :on => :collection
   #     end
   #   end
 
@@ -49,11 +60,11 @@ JobBoard::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'jobs#index'
+   root :to => "static_pages#home"
 
   # See how all your routes lay out with "rake routes"
 
-  # This is a legacy wild controller route that's not recommended for RESTful applications.
+  # This is a legacy wild controller route that"s not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
+  # match ":controller(/:action(/:id))(.:format)"
 end

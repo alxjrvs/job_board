@@ -1,0 +1,10 @@
+<table>
+	<tr>
+		<% @jobs.each do |j| %>
+		<td><%=  j.title %></td>
+		<td><%=  j.pay %></td>
+		<td><%=  j.location %></td>
+		<td><%=  j.needed %></td>
+		<% end  %>
+	</tr>
+</table>
