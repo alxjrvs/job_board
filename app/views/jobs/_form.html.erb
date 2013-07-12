@@ -1,25 +1,27 @@
-<%= form_for @job do |f| %>
-<%=  f.label :category %>
-<%= f.select :category, [["Child Care"],["Computer Help"],["General"],["Home Services"],["Moving"],["Party Help/Catering"],["Research/Focus Group"],["Yardwork"]]%>
-<%= f.label :title %>
-<%= f.text_field :title %>
-<%= f.label :description %>
-<%= f.text_area :description %>
-<%= f.label :location %>
-<%= f.select :location, [["Allston/Brighton"],["Back Bay"],["Beacon Hill"],["Brookline"],["Boston-other"],["Cambridge"],["Charlestown"],["Dorchester"],["Downtown/Financial District"],["East Boston"],["Fenway/Kenmore Square"],["Jamaica Plain"],["Newton"],["North End"],["Roxbury"],["Somerville"],["South Boston"],["South End"],["Watertown"],["North of Boston"],["West of Boston"],["South of Boston"]]%>
-<%= f.label :needed %>
-<%= f.select :needed, [[1],[2],[3],[4],[5],[6]] %>
-<!-- <%= f.label "State Date" %> -->
-<!-- <%= f.date_select :start  %> -->
-<%= f.label :pay %>
-<%= f.text_field :pay, :value => "> 8.00 (minimum wage)" %>
-<%= f.label :hours %>
-<%= f.text_field :hours %>
-<%= f.label 'How did you hear about us?' %>
-<%= f.select :how, [['Newspaper'],['Friend'],['Online'],['Blog'],['Magazine']] %>
-<br>
-<%= f.submit nil, :class => 'btn' %>
-<% end %>
+
+	<%= form_for @job do |f| %>
+	<%=  f.label :category %>
+	<%= f.select :category, [["Child Care"],["Computer Help"],["General"],["Home Services"],["Moving"],["Party Help/Catering"],["Research/Focus Group"],["Yardwork"]]%>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	<%= f.label :description %>
+	<textarea rows="7"><% f.text_area :description %></textarea>
+	<%= f.label :location %>
+	<%= f.select :location, [["Allston/Brighton"],["Back Bay"],["Beacon Hill"],["Brookline"],["Boston-other"],["Cambridge"],["Charlestown"],["Dorchester"],["Downtown/Financial District"],["East Boston"],["Fenway/Kenmore Square"],["Jamaica Plain"],["Newton"],["North End"],["Roxbury"],["Somerville"],["South Boston"],["South End"],["Watertown"],["North of Boston"],["West of Boston"],["South of Boston"]]%>
+	<%= f.label :needed %>
+	<%= f.select :needed, [[1],[2],[3],[4],[5],[6]] %>
+	<!-- <%= f.label "State Date" %> -->
+	<!-- <%= f.date_select :start  %> -->
+	<%= f.label :pay %>
+	<placeholder = "text input"><%= f.text_field :pay, :value => "> 8.00 (minimum wage)" %>
+	<%= f.label :hours %>
+	<%= f.text_field :hours %>
+	<%= f.label 'How did you hear about us?' %>
+	<%= f.select :how, [['Newspaper'],['Friend'],['Online'],['Blog'],['Magazine']] %>
+	<br>
+	<%= f.submit nil, :class => 'btn btn-primary btn-large' %>
+	<% end %>
+</div>
 
 <% if flash[:notice] %>
     <div class="notice"><%= flash[:notice] %></div>
