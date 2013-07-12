@@ -1,7 +1,17 @@
-<h1>Job Board</h1>
-<p>will make this page look really sweet</p>
+<div class = "row">
+	<div class = "span12" id = "home-border">
+		<h1 class = "text-center">Catchy name</h1>
+		<p class = "text-center" id = "home-page-header">Connecting <b>you</b> with Boston's <b>250,000+</b> students <b>all ready</b> to get to <b>work!</b></p>
+	</div>
+</div>
 
-<ul>
-	<li><%= link_to 'categories', categories_path  %></li>
-	<li><%= link_to 'form', new_job_path  %></li>
-</ul>
+
+<div class = "row" id = "home-page-button-row">
+	<div class = "span4 offset2 text-center">
+		<%= link_to "I'm an employer", new_job_path, :class => 'btn btn-large btn-primary' %>
+	</div>
+	<div class = "span4 text-center">
+		<%= link_to "I'm a student", categories_path, :class => 'btn btn-large btn-primary' %>
+	</div>
+</div>
+	

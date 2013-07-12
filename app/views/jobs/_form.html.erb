@@ -1,11 +1,11 @@
 
 	<%= form_for @job do |f| %>
 	<%=  f.label :category %>
-	<%= f.select :category, [["Child Care"],["Computer Help"],["General"],["Home Services"],["Moving"],["Party Help/Catering"],["Research/Focus Group"],["Yardwork"]]%>
+	<%= f.select :category, [["Child Care"],["Computer Help"],["General"],["Home Services"],["Moving"],["Party Help/Catering"],["Research/Focus Group"],["Yardwork"]] %>
 	<%= f.label :title %>
-	<%= f.text_field :title %>
+	<%= f.text_field :title, :placeholder => "i.e. Babysitter Needed" %>
 	<%= f.label :description %>
-	<textarea rows="7"><% f.text_area :description %></textarea>
+	<%= f.text_area :description, :rows => 7, :placeholder => "Please give a brief description of the job" %>
 	<%= f.label :location %>
 	<%= f.select :location, [["Allston/Brighton"],["Back Bay"],["Beacon Hill"],["Brookline"],["Boston-other"],["Cambridge"],["Charlestown"],["Dorchester"],["Downtown/Financial District"],["East Boston"],["Fenway/Kenmore Square"],["Jamaica Plain"],["Newton"],["North End"],["Roxbury"],["Somerville"],["South Boston"],["South End"],["Watertown"],["North of Boston"],["West of Boston"],["South of Boston"]]%>
 	<%= f.label :needed %>
@@ -13,17 +13,18 @@
 	<!-- <%= f.label "State Date" %> -->
 	<!-- <%= f.date_select :start  %> -->
 	<%= f.label :pay %>
-	<placeholder = "text input"><%= f.text_field :pay, :value => "> 8.00 (minimum wage)" %>
+	<%= f.text_field :pay, :placeholder => "minimum wage is 8.00/hour" %>
 	<%= f.label :hours %>
 	<%= f.text_field :hours %>
 	<%= f.label 'How did you hear about us?' %>
 	<%= f.select :how, [['Newspaper'],['Friend'],['Online'],['Blog'],['Magazine']] %>
 	<br>
-	<%= f.submit nil, :class => 'btn btn-primary btn-large' %>
+	<%= f.submit nil, :class => 'btn btn-primary btn-large', :value => 'Post my job!' %>
 	<% end %>
-</div>
+
 
 <% if flash[:notice] %>
     <div class="notice"><%= flash[:notice] %></div>
   <% end %>
 
+	
