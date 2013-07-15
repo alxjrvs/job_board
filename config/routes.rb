@@ -11,6 +11,9 @@ JobBoard::Application.routes.draw do
   match "/yardwork", to: "jobs#index", :category => "Yardwork"
 
 
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -3,21 +3,27 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'capybara/rails'
 
+Capybara.app = JobBoard::Application
+Capybara.default_driver = :rack_test
+
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
   #
   # Note: You'll currently still have to declare fixtures explicitly in integration tests
   # -- they do not yet inherit this setting
-  fixtures :all
+  # fixtures :all
 
   # Add more helper methods to be used by all tests here...
 end
 
 class ActionDispatch::IntegrationTest
 	include Capybara::DSL
+  self.use_transactional_fixtures = false
+
 
 	def teardown
 		Capybara.reset_sessions!
 		Capybara.use_default_driver
 	end
 end
+

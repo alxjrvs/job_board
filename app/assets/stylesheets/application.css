@@ -13,29 +13,31 @@
  */
 
 
+.container {background-color: white}
+
 .job_form {border: black;}
 
-#instructions {;border-right: 1px solid black;padding-right:20px;}
-
+#instructions {;border-right: 1px solid black;
+					padding-right:20px;
+}
 
 #home-page-header{font-family: europa, 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif; 
-		font-size: 4em; 
-		 	font-weight: 300;padding-top: 30px;line-height: 60px; 
+					font-size: 4em; 
+		 				font-weight: 300;
+		 					padding-top: 30px;
+		 						line-height: 60px; 
 }
 
-#home-border {border-bottom: 1px solid grey;}
-
-#home-page-student {border: 1px solid black;
-			border-radius: 8px;
-				background-color: #A9A9A9;
+#home-border {border-bottom: 1px solid grey;
 }
+
 
 #home-page-employer {border: 1px solid black;
-			border-radius: 8px;
-				background-color: #A9A9A9;
+						border-radius: 8px;
+							background-color: #A9A9A9;
 }
 
-#home-page-button-row {padding-top: 80px;} 	
+#home-page-button-row {padding-top: 80px;
+} 	
 
-.btn-large {width: 125px;height: 40px;margin-top:40px;margin-left: 20px;}
 
