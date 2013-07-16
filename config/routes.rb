@@ -1,7 +1,7 @@
 JobBoard::Application.routes.draw do
   devise_for :users
-
   resources :jobs
+  match "/home", to: "static_pages#home"
   match "/categories", to: "static_pages#categories"
   match "/childcare", to: "jobs#index", :category => "Child Care"
   match "/computer", to: "jobs#index", :category => "Computer Help"
@@ -65,7 +65,7 @@ JobBoard::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => "static_pages#home"
+   root :to => "static_pages#landing"
 
   # See how all your routes lay out with "rake routes"
 

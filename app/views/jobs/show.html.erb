@@ -1,4 +1,4 @@
-
+<div class = "container">
 <b><p>Category:</b> 
 <%= @job.category %></p>
 <b><p>Title:</b>
@@ -13,8 +13,11 @@
 <%= @job.pay %></p>
 <b><p>Start:</b>
 <%= @job.start %></p>
-<b><p>How did you hear about us?</b>
-<%= @job.how %></p>
+<!-- <b><p>How did you hear about us?</b> -->
+<!-- <%= @job.how %></p> -->
 <!-- <b><p>Hours:</b> -->
-# <%= @job.hours %></p>
+<b><p>Hours:</b>
+<%= @job.hours %></p>
+</div>
+<%= button_to "back", jobs_path %>
 

@@ -13,11 +13,14 @@
  */
 
 .sky {background-image: url("boston.jpg"); -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    	-moz-background-size: cover;
+    		-o-background-size: cover;
+    			background-size: cover;
 }
-.info {background-color: #FFFFCC;}
+
+
+.info {background-color: #D8D8D8;
+}
 
 
 #instructions {;border-right: 1px solid black;
@@ -33,10 +36,25 @@
 		 								margin-top: 40px;
 }
 
+.home-page-signup {border: 2px black solid;
+}
 
-.home-page-signup {border: 2px black solid;}
+#home-button {margin-top: 30px; 
+				margin-bottom: 300px;
+}
 
-#home-button {margin-top: 30px; margin-bottom: 300px;}
+#login {background-color: #C8C8C8 ;
+}
 
+#login-form {margin-top: 20px;
+				margin-right: 0px;
+}
 
+.main-content {background-color: #F8F8F8;
+}
 
+#main-body {margin-bottom: 200px;	}
+
+#content {margin-top: 75px;}
+
+.table {margin-top: 40px;}

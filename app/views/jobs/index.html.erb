@@ -1,12 +1,25 @@
-<table>
-	<tr>
-		<% @jobs.each do |j| %>
-		<td><%=  j.title %></td>
-		<td><%=  j.pay %></td>
-		<td><%=  j.location %></td>
-		<td><%=  j.needed %></td>
+<div class = "container">
+	<table class = "table table-bordered">
+		<tr>
+			
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Pay</th>
+					<th>Location</th>
+					<th>Needed</th>
+					<th>Start Date</th>
+				</tr>
+			</thead>
+			<% @jobs.each do |j| %>
+			<td><%=  link_to j.title, j %></td>
+			<td><%=  j.pay %></td>
+			<td><%=  j.location %></td>
+			<td><%=  j.needed %></td>
+			<td><%= j.start %></td>
+		</tr>
 		<% end  %>
-	</tr>
-</table>
+	</table>
 
-<%= button_to "Back to categories", categories_path %>
+	<%= button_to "Back to categories", categories_path, :class => "btn" %>
+</div>
