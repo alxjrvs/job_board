@@ -12,12 +12,12 @@
  *= require_tree .
  */
 
-.sky {background-color: #33CCFF;}
-
-.info {background-color: #CCCC66;}
-
-#brown {background-color: green;
-			height: 400px;}
+.sky {background-image: url("boston.jpg"); -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.info {background-color: #FFFFCC;}
 
 
 #instructions {;border-right: 1px solid black;
@@ -30,15 +30,13 @@
 		 					padding-top: 30px;
 		 						line-height: 60px; 
 		 							color: white;
+		 								margin-top: 40px;
 }
 
-
-#home-page-employer {border: 1px solid black;
-						border-radius: 8px;
-							background-color: #A9A9A9;
-}
 
 .home-page-signup {border: 2px black solid;}
 
-#yo {margin-top: 60px;}
+#home-button {margin-top: 30px; margin-bottom: 300px;}
+
+
 
