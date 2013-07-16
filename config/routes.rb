@@ -1,4 +1,6 @@
 JobBoard::Application.routes.draw do
+  devise_for :users
+
   resources :jobs
   match "/categories", to: "static_pages#categories"
   match "/childcare", to: "jobs#index", :category => "Child Care"

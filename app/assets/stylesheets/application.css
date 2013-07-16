@@ -12,10 +12,13 @@
  *= require_tree .
  */
 
+.sky {background-color: #33CCFF;}
 
-.container {background-color: white}
+.info {background-color: #CCCC66;}
 
-.job_form {border: black;}
+#brown {background-color: green;
+			height: 400px;}
+
 
 #instructions {;border-right: 1px solid black;
 					padding-right:20px;
@@ -26,9 +29,7 @@
 		 				font-weight: 300;
 		 					padding-top: 30px;
 		 						line-height: 60px; 
-}
-
-#home-border {border-bottom: 1px solid grey;
+		 							color: white;
 }
 
 
@@ -37,7 +38,7 @@
 							background-color: #A9A9A9;
 }
 
-#home-page-button-row {padding-top: 80px;
-} 	
+.home-page-signup {border: 2px black solid;}
 
+#yo {margin-top: 60px;}
 
