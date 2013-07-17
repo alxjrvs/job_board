@@ -12,20 +12,24 @@
  *= require_tree .
  */
 
-.sky {background-image: url("boston.jpg"); -webkit-background-size: cover;
+.landing-page-picture {background-image: url("boston.jpg"); -webkit-background-size: cover;
     	-moz-background-size: cover;
     		-o-background-size: cover;
     			background-size: cover;
 }
 
 
-.info {background-color: #D8D8D8;
+.landing-page-first-row {background-color: #E8E8E8
+
+
+ ;
 }
 
 
-#instructions {;border-right: 1px solid black;
-					padding-right:20px;
-}
+#footer {background-color: black; 
+			height: 150px; 
+				smargin-top: 100px;}
+
 
 #home-page-header{font-family: europa, 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif; 
 					font-size: 4em; 
@@ -50,7 +54,7 @@
 				margin-right: 0px;
 }
 
-.main-content {background-color: #F8F8F8;
+.main-content {background-color: #E8E8E8;
 }
 
 #main-body {margin-bottom: 200px;	}
@@ -58,3 +62,18 @@
 #content {margin-top: 75px;}
 
 .table {margin-top: 40px;}
+
+#row2 {margin-top: 20px;
+}
+
+#row3, #row4, #row5 {margin-top: 60px;
+}
+
+#row6 {margin-top: 80px;
+	  		margin-bottom: 40px;	
+}
+
+
+#categories {margin-top: 150px;
+}
+
