@@ -12,33 +12,23 @@
  *= require_tree .
  */
 
-.landing-page-picture {background-image: url("boston.jpg"); -webkit-background-size: cover;
-    	-moz-background-size: cover;
-    		-o-background-size: cover;
-    			background-size: cover;
+.landing-page-picture {background-image: url("boston.jpg");
+			 -webkit-background-size: cover;
+			    	-moz-background-size: cover;
+			    		-o-background-size: cover;
+			    			background-size: cover;
 }
 
-
-<<<<<<< HEAD
-.landing-page-first-row {background-color: #E8E8E8
-
-
- ;
+.landing-page-first-row {background-color: #E8E8E8;
 }
-=======
+
 .landing-page-first-row, .pick {background-color: #E8E8E8 ;
 }
 
-
-
-
-
->>>>>>> 49d68db57d4b97fef7c24788a95c656c05f39f50
-
-
 #footer {background-color: black; 
 			height: 150px; 
-				smargin-top: 100px;}
+				smargin-top: 100px;
+}
 
 
 #home-page-header{font-family: europa, 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif; 
@@ -57,27 +47,29 @@
 				margin-bottom: 300px;
 }
 
-#login {background-color: #C8C8C8 ;
+#login {background-color: #C8C8C8;
 }
 
 #login-form {margin-top: 20px;
 				margin-right: 0px;
 }
 
-<<<<<<< HEAD
 .main-content {background-color: #E8E8E8;
-=======
-.main-content {background-color: ##E8E8E8;
->>>>>>> 49d68db57d4b97fef7c24788a95c656c05f39f50
 }
 
-#main-body {margin-bottom: 200px;	}
+.main-content {background-color: ##E8E8E8;
+}
 
-#content {margin-top: 75px;}
+#main-body {margin-bottom: 200px;
+}
 
-.table {margin-top: 40px;}
+#content {margin-top: 75px;
+}
 
-<<<<<<< HEAD
+.table {margin-top: 40px;
+}
+
+
 #row2 {margin-top: 20px;
 }
 
@@ -91,8 +83,11 @@
 
 #categories {margin-top: 150px;
 }
-=======
-#row2 {margin-top: 20px;}
-#row3, #row4, #row5 {margin-top: 60px;}
->>>>>>> 49d68db57d4b97fef7c24788a95c656c05f39f50
+
+#row2 {margin-top: 20px;
+}
+
+#row3, #row4, #row5 {margin-top: 60px;
+}
+
 
