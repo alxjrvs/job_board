@@ -19,11 +19,21 @@
 }
 
 
+<<<<<<< HEAD
 .landing-page-first-row {background-color: #E8E8E8
 
 
  ;
 }
+=======
+.landing-page-first-row, .pick {background-color: #E8E8E8 ;
+}
+
+
+
+
+
+>>>>>>> 49d68db57d4b97fef7c24788a95c656c05f39f50
 
 
 #footer {background-color: black; 
@@ -54,7 +64,11 @@
 				margin-right: 0px;
 }
 
+<<<<<<< HEAD
 .main-content {background-color: #E8E8E8;
+=======
+.main-content {background-color: ##E8E8E8;
+>>>>>>> 49d68db57d4b97fef7c24788a95c656c05f39f50
 }
 
 #main-body {margin-bottom: 200px;	}
@@ -63,6 +77,7 @@
 
 .table {margin-top: 40px;}
 
+<<<<<<< HEAD
 #row2 {margin-top: 20px;
 }
 
@@ -76,4 +91,8 @@
 
 #categories {margin-top: 150px;
 }
+=======
+#row2 {margin-top: 20px;}
+#row3, #row4, #row5 {margin-top: 60px;}
+>>>>>>> 49d68db57d4b97fef7c24788a95c656c05f39f50
 
