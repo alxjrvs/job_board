@@ -26,7 +26,7 @@
       <div class="nav-collapse collapse">
       	 	<ul class="nav">
   			<li>
-   				 <a href="http://localhost:3000">Home</a>
+   				 <%= link_to "Home", home_path %>
   			</li>
   			<li class = "divider-vertical"></li>
   			<li>
@@ -47,5 +47,27 @@
 
 <%= yield %>
 
+<div id  = "footer">
+  <div class = "container">
+    <div class = "row">
+      <div class = "span4">
+        <h5>Contact Us</h5>
+        <h5>email@bu.edu</h5>
+        <h5>@twitterhandle</h5>
+      </div>
+      <div class = "span4">
+        <h5>some link here</h5>
+        <h5>some link here</h5>
+        <h5>some link here</h5>
+        <p>yo</p>
+      </div>
+      <div class = "span4">
+        <h5>some link here</h5>
+        <h5>some link here</h5>
+        <h5>some link here</h5>
+      </div>
+    </div>
+    </div>
+</div>
 </body>
 </html>

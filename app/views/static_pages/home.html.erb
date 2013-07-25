@@ -1,6 +1,6 @@
 	
 
-	<div class = "row" id = "login">
+	<div class = "row" id = "login-bar">
 		<div class = "container">
 			<div class = "span12">
 				<div class = "text-right"><%= render "devise_login_form" %></div>		
@@ -8,34 +8,32 @@
 		</div>
 	</div>
 <div class = "main-content">
+	<div class = "row" id = "main-body">
 	<div class = "container">
-		<div class = "row" id = "main-body">
-			<div class = "span9" id = "content">
-				<h1>Hire Boston-area university students for odd jobs</h1>
-				<br>
-				<h1>Sub Headline</h1>
-				<h3>Simple <small>seamlessly access Boston's student talent</small></h3>
-<<<<<<< HEAD
-				<h3>Support <small>local student economy</small></h3>
-				<h3>Secure <small>Your contact info will only be provided to students interested in your job</small></h3>
-=======
-				<h3>Support <small>local college student economy</small></h3>
-				<h3>Secure <small>Your contact info will only be provided to students interested in yoru job</small></h3>
->>>>>>> 49d68db57d4b97fef7c24788a95c656c05f39f50
-				<br>
-			</div>
-			<div class = "span3">
-				<div class = "text-left"><%= render "devise_registration_form" %>
-			    </div>
-		    </div>
-	    </div>
-    </div>
-</div>
+			 <div class = "span12" id = "content">
+			   <h1 class = "text-center">Hire Boston students for odd jobs</h1>
+			 </div>
+				
+			 <div class = "row">
+			   <div class = "span3 offset3">
+			   	<br>
+			 	 	<%= link_to "Post a Job. It's Free!", new_user_registration_path, :class => 'btn btn-large btn-primary text-center' %>
+				 </div>
+			 	<br>
+			 	 <div class = "span3">
+			   	 	<%= link_to "Need a job? Sign up!", root_path, :class => 'btn btn-large btn-success text-center' %>
+				 </div>
+			 </div>
+		</div>
+	</div>
+
+	<hr>
+
 
 <div class = "container">
 	<div class = "row">
 		<div class = "span4">
-			<h2>Our Service</h2>
+			<h2>Our Community</h2>
 			<p>NAME is a job board connecting local university students with Boston/Cambridge residents who need odd jobs completed.  These jobs typically take anywhere from an hour to a weekend to complete.  <%= link_to "learn more", root_path %></p>
 		</div>
 		<div class = "span4">
@@ -47,5 +45,36 @@
 			<p>Only local university students are permitted to use our site.  Furthermore, only students interested in your job are able to view contact information. Need a little more text to match with others <%= link_to "learn more", root_path %></p>
 		</div>
 	</div>
+	<div class = "row" id = "third-row-home-page">
+		<div class = "span6">
+			<h2>Boston's student talent</h2>
+		</div>
+		<div class = "span6">
+			<h2>put something here too dawg</h2>
+		</div>
+	</div>
+	<div class = "row" id = "talent-list">
+		<div class = "span3">
+		<ul>
+			<li>Yardwork</li>
+			<li>Wed Development</li>
+			<li>Babyitting </li>
+			<li>Moving</li>
+		</div>
+		<div class = "span3">
+		
+			<li>House Cleaning</li>
+			<li>House Cleaning</li>
+			<li>Painting</li>
+		</ul>
+	</div>
+		
+		<div class = "span6">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sequi ipsam doloremque maiores autem. Sapiente, eveniet, magnam obcaecati cupiditate voluptatibus unde. Quos, voluptatem, autem error hic modi fuga et. Eum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, atque, corporis, totam vitae omnis dolor error suscipit temporibus ipsam recusandae magni et. Illo, accusantium incidunt laborum veritatis id eum fugit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, perspiciatis, vero, cumque, natus eos placeat earum sint sit ratione consectetur magnam recusandae dolore dolorem harum ipsum modi aperiam illo suscipit!</p>
+		</div>
+	</div>
 </div>
+</div>
+
+
 
