@@ -3,4 +3,5 @@ class Job < ActiveRecord::Base
    validates :category, :title, :description, :how, :location, :needed,:hours, :pay, presence: true
    #add :start once I figure out date
    # validates :pay, :numericality => { :greater_than => 8 }
+   belongs_to :user
 end

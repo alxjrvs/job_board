@@ -1,4 +1,5 @@
 class JobsController < ApplicationController
+
 	def index
 		@jobs = Job.where(category: params[:category])
 	end
