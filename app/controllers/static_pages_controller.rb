@@ -4,6 +4,11 @@ class StaticPagesController < ApplicationController
 
 	def landing
 	end
+	
 	def categories
 	end
+
+	def about
+	end
+
 end

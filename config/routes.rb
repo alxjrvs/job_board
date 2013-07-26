@@ -5,6 +5,7 @@ JobBoard::Application.routes.draw do
   resources :jobs
   match "/home", to: "static_pages#home"
   match "/categories", to: "static_pages#categories"
+  match "/about", to: "static_pages#about"
   match "/childcare", to: "jobs#index", :category => "Child Care"
   match "/computer", to: "jobs#index", :category => "Computer Help"
   match "/general", to: "jobs#index", :category => "General"
@@ -13,6 +14,7 @@ JobBoard::Application.routes.draw do
   match "party-help-catering", to: "jobs#index", :category => "Party Help/Catering"
   match "/research-focus-group", to: "jobs#index", :category => "Research/ FocusGroup"
   match "/yardwork", to: "jobs#index", :category => "Yardwork"
+
 
 
 

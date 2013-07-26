@@ -1,23 +1,28 @@
 <div class = "container">
-<b><p>Category:</b> 
-<%= @job.category %></p>
-<b><p>Title:</b>
-<%= @job.title %></p>
-<b><p>Description:</b>
-<%= @job.description %></p>
-<b><p>Location:</b>
-<%= @job.location %></p>
-<b><p>Needed</b>
-<%= @job.needed %></p>
-<b><p>Pay:</b>
-<%= @job.pay %></p>
-<b><p>Start:</b>
-<%= @job.start %></p>
-<!-- <b><p>How did you hear about us?</b> -->
-<!-- <%= @job.how %></p> -->
-<!-- <b><p>Hours:</b> -->
-<b><p>Hours:</b>
-<%= @job.hours %></p>
+	<div class = "row" id = "show-row">
+		<div class = "span">
+		<b><p>Category:</b> 
+		<%= @job.category %></p>
+		<b><p>Title:</b>
+		<%= @job.title %></p>
+		<b><p>Description:</b>
+		<%= @job.description %></p>
+		<b><p>Location:</b>
+		<%= @job.location %></p>
+		<b><p>Needed</b>
+		<%= @job.needed %></p>
+		<b><p>Pay:</b>
+		<%= @job.pay %></p>
+		<b><p>Start:</b>
+		<%= @job.start %></p>
+		<!-- <b><p>How did you hear about us?</b> -->
+		<!-- <%= @job.how %></p> -->
+		<!-- <b><p>Hours:</b> -->
+		<b><p>Hours:</b>
+		<%= @job.hours %></p>
+		<%= button_to "back", jobs_path %>
+		</div>
+	</div>
 </div>
-<%= button_to "back", jobs_path %>
+
 
