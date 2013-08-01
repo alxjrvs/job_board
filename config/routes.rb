@@ -3,6 +3,7 @@ JobBoard::Application.routes.draw do
 
   devise_for :users
   resources :jobs
+  match "/faq", to: "static_pages#faq"
   match "/home", to: "static_pages#home"
   match "/categories", to: "static_pages#categories"
   match "/about", to: "static_pages#about"

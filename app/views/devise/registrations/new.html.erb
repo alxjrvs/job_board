@@ -1,7 +1,7 @@
 <div class = "container">
 	<div class = "row" id = "registration-row">
 		<div class = "span4">
-		<h2>Sign up</h2>
+		<h2>Employer Sign up</h2>
 		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
 		  <%= devise_error_messages! %>
 
@@ -20,7 +20,10 @@
 			<%= render "devise/shared/links" %>
 		</div>
 		<div class = "span8">
-			<h1>put picture here!</h1>
+			<h3>It looks like you have a job!</h3>
+			<p>Great, simply create your account by filling out our simple form to the left and you're ready!</p>
+			<p>Even if you don't have a job at the moment feel free to create an account and browse the typical odd jobs our users post.</p>
+			<p>If you're a student and accidentally ended up on this page, no problem.  Simply <%= link_to "click here", new_student_registration_path %> to be taken to our student sign up page.</p>
 		</div>
 	</div>
 </div>

@@ -1,25 +1,34 @@
 <div class = "container">
-<h2>Sign up</h2>
+  <div class = "row">
+    <div class = "span4">
+  <h2>Student Sign up</h2>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
 
-  <div><%= f.label :email %>
-  <%= f.email_field :email, :autofocus => true %></div>
+      <div><%= f.label :email %>
+      <%= f.email_field :email, :autofocus => true %></div>
 
-  <div><%= f.label :school %>
-  <%= f.select :school, [['Boston University'],['Boston College']] %></div>
+      <div><%= f.label :school %>
+      <%= f.select :school, [['Boston University'],['Boston College']] %></div>
 
 
-  <div><%= f.label :password %>
-  <%= f.password_field :password %></div>
+      <div><%= f.label :password %>
+      <%= f.password_field :password %></div>
 
-  <div><%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %></div>
+      <div><%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation %></div>
 
-  <div><%= f.submit "Sign up", :class => "btn btn-success btn-large" %></div>
-<% end %>
+      <div><%= f.submit "Sign up", :class => "btn btn-success btn-large" %></div>
+    <% end %>
 
-<%= render "students/shared/links" %>
-
+    <%= render "students/shared/links" %>
+    </div>
+    <div class = "span8">
+      <h3>So, you're ready to make some cash?</h3>
+      <p>Great, simply create your account by filling out our simple form to the left and you're ready!</p>
+      <p>Even if you're not quite ready to pick up some jobs, feel free to create an account and browse the jobs our users post.</p>
+      <p>If you want to post a job and accidentally ended up on this page, no problem.  Simply <%= link_to "click here", new_user_registration_path %> to be taken to our employer sign up page.</p>
+    </div>
+  </div>
 </div>
