@@ -1,6 +1,11 @@
 class JobsController < ApplicationController
-	before_filter :authenticate_user!, :only => [:new]
-	before_filter :authenticate_student!, :only => [:show]
+	# ensure admin for other actions
+before_filter :check_user_logged_in!, :except => [:show, :index]
+
+# ensure user or admin logged in for these actions (:only option is optional)
+before_filter :check_student_logged_in!, :only => [:show]
+
+
 
 	def index
 		@jobs = Job.where(category: params[:category])
@@ -46,3 +51,13 @@ class JobsController < ApplicationController
 	end
 
 end
+
+private
+    def check_user_logged_in! # admin must be logged in
+        authenticate_user!
+    end
+    def check_student_logged_in! # if admin is not logged in, user must be logged in
+      if !user_signed_in?
+        authenticate_student!
+      end   
+    end

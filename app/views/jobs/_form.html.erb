@@ -10,12 +10,15 @@
 	<%= f.select :location, [["Allston/Brighton"],["Back Bay"],["Beacon Hill"],["Brookline"],["Boston-other"],["Cambridge"],["Charlestown"],["Dorchester"],["Downtown/Financial District"],["East Boston"],["Fenway/Kenmore Square"],["Jamaica Plain"],["Newton"],["North End"],["Roxbury"],["Somerville"],["South Boston"],["South End"],["Watertown"],["North of Boston"],["West of Boston"],["South of Boston"]]%>
 	<%= f.label :needed %>
 	<%= f.select :needed, [[1],[2],[3],[4],[5],[6]] %>
-	<%= f.label "State Date" %>
-	<%= f.text_field :start  %>
+	
 	<%= f.label :pay %>
 	<%= f.text_field :pay, :placeholder => "minimum wage is 8.00/hour" %>
 	<%= f.label :hours %>
 	<%= f.text_field :hours, :placeholder => "estimate number of hours" %>
+	<%= f.label :start_date %>
+	<%= f.date_select :start_date, :default => Date.today, 
+    :order => [:month, :day, :year], :start_year => Date.today.year, 
+    :end_year => Date.today.year + 1 %>
 	<%= f.label 'How did you hear about us?' %>
 	<%= f.select :how, [['Newspaper'],['Friend'],['Online'],['Blog'],['Magazine']] %>
 	<br>
