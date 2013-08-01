@@ -36,7 +36,7 @@
         </li>
         <li>
           <% if user_signed_in? %>
-          <%= current_user.email %>    
+         <%= link_to "Signed in as: #{current_user.email}", root_path %>  
           <% end %> 
         </li>
         <li class = "divider-vertical"></li>
