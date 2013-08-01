@@ -20,7 +20,7 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="/">JobBoard</a>
+      <a class="brand" href="/home">JobBoard</a>
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
@@ -29,12 +29,28 @@
    				 <%= link_to "Home", home_path %>
   			</li>
   			<li class = "divider-vertical"></li>
-  			<li>
-  					<%= link_to 'Categories', categories_path %></li>
+  			
+        <li>
+  					<%= link_to 'Categories', categories_path %>
+        </li>
   			<li class = "divider-vertical"></li>
-  			<li>
-  					<%= link_to 'Post a Job', new_job_path %></li>
-  			<li class = "divider-vertical"></li>
+  			
+        <li>
+            <%= link_to 'Post a Job', new_job_path %>
+        </li>
+        <li class = "divider-vertical"></li>
+      
+        <li>
+          <%= render "devise/shared/logout" %>
+        </li>
+        <li>
+          <% if user_signed_in? %>
+         <%= link_to "Signed in as: #{current_user.email}", root_path %>  
+          <% end %> 
+        </li>
+        <li class = "divider-vertical"></li>
+
+
 		</ul>
         <!-- .nav, .navbar-search, .navbar-form, etc -->
       </div>
@@ -43,7 +59,18 @@
   </div>
 </div>
 <body>
+
+
   <div id = "wrap">
+      <% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+    <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+      <a class="close" data-dismiss="alert">&#215;</a>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    </div>
+  <% end %>
+<% end %>
+
 
     <%= yield %>
 

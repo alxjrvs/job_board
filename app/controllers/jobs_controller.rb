@@ -1,5 +1,6 @@
 class JobsController < ApplicationController
-	before_filter :authenticate_user!, :except => [:index]
+	before_filter :authenticate_user!, :only => [:new]
+	before_filter :authenticate_student!, :only => [:show]
 
 	def index
 		@jobs = Job.where(category: params[:category])
@@ -18,10 +19,10 @@ class JobsController < ApplicationController
 		@job = Job.new(params[:job])
 		
 			if @job.save
-				flash[:notice] = "save succesful"
+				flash[:notice] = "Job Succesfully Posted"
 				redirect_to @job
 			else
-				flash[:notice] = "did not save"
+				flash[:notice] = "Could not post your job.  Please make sure all fields are filled in!"
 				redirect_to new_job_path
 			end
 			
