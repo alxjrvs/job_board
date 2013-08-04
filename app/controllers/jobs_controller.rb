@@ -1,9 +1,9 @@
 class JobsController < ApplicationController
-	# ensure admin for other actions
-before_filter :check_user_logged_in!, :except => [:show, :index]
+before_filter :check_user_logged_in!, :only => [:show, :new,:index]
+before_filter :check_student_logged_in!
 
 # ensure user or admin logged in for these actions (:only option is optional)
-before_filter :check_student_logged_in!, :only => [:show]
+# before_filter :check_student_logged_in!, :only => [:show]
 
 
 
