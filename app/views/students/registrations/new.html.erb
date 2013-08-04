@@ -1,3 +1,4 @@
+<% @title = "Sign Up - Student" %>
 <div class = "container">
   <div class = "row">
     <div class = "span4">
@@ -10,7 +11,7 @@
       <%= f.email_field :email, :autofocus => true %></div>
 
       <div><%= f.label :school %>
-      <%= f.select :school, [['Boston University'],['Boston College']] %></div>
+      <%= f.select :school, [["Berklee College of Music"],["Boston University"],["Boston College"],["Emerson College"],["Harvard University"],["MIT"],["Northeastern University"],["Suffolk University"],["Tufts University"]],:prompt => "Select Your School..." %></div>
 
 
       <div><%= f.label :password %>
@@ -25,10 +26,7 @@
     <%= render "students/shared/links" %>
     </div>
     <div class = "span8">
-      <h3>So, you're ready to make some cash?</h3>
-      <p>Great, simply create your account by filling out our simple form to the left and you're ready!</p>
-      <p>Even if you're not quite ready to pick up some jobs, feel free to create an account and browse the jobs our users post.</p>
-      <p>If you want to post a job and accidentally ended up on this page, no problem.  Simply <%= link_to "click here", new_user_registration_path %> to be taken to our employer sign up page.</p>
+      
     </div>
   </div>
 </div>

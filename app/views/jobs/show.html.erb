@@ -1,3 +1,4 @@
+<% @title = @job.title.humanize %>
 <div class = "container">
 	<div class = "row" id = "show-row">
 		<div class = "span">
@@ -20,6 +21,10 @@
 		<!-- <b><p>Hours:</b> -->
 		<b><p>Hours:</b>
 		<%= @job.hours %></p>
+		<b><p>Job Contact ID:</b>
+		<%= @job.id + 200 %> (email EMAIL@EMAIL.COM this number and we will securely email you the employer's contact information)</p>
+
+
 		<%= button_to "back", jobs_path %>
 		</div>
 	</div>
