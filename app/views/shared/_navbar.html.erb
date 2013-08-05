@@ -34,9 +34,9 @@
         <li>
           <%= render "devise/shared/logout" %>
         </li>
-        <li>
+        <li class = "disabled">
           <% if user_signed_in? %>
-         <%= link_to "Signed in as: #{current_user.email}", root_path %>  
+         <%= link_to "Signed in as: #{current_user.email}"%>  
           <% end %> 
         </li>
         <li class = "divider-vertical"></li>
