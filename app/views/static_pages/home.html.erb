@@ -20,26 +20,18 @@
 			 <div class = "row">
 			   <div class = "span3 offset3">
 			   	<br>
-			   	<% if user_signed_in? %>
-			   	 <%= link_to "Post a Job. It's Free!", new_job_path, :class => 'btn btn-large btn-primary text-center' %>
-			 	 <% else %>
 			 	 <%= link_to "Post a Job. It's Free!", new_user_registration_path, :class => 'btn btn-large btn-primary text-center' %>
-			 	
-			 	 <% end %>
-
 				 </div>
 			 	<br>
 			 	 <div class = "span3">
 			   	 	<%= link_to "Need a job? Sign up!", new_student_registration_path, :class => 'btn btn-large btn-success text-center' %>
 				 </div>
+				
 			 </div>
 		</div>
 	</div>
 
-	<hr>
-
-
-<div class = "container">
+	<div class = "container">
 	<div class = "row">
 		<div class = "span4">
 			<h2>Our Community</h2>

@@ -10,7 +10,9 @@ class JobTest < ActiveSupport::TestCase
   should validate_presence_of(:needed)
   should validate_presence_of(:how)
   should validate_presence_of(:start_date)
-  # should_not allow_value(0..7.99).for(:pay)def method_missing(meth, *args, &blk)
+  should belong_to(:user)
+  should_not allow_value(7).for(:pay)
+  should allow_value(8).for(:pay)
     
 
   test "Job won't save without attributes" do 
