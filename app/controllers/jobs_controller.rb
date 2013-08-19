@@ -21,7 +21,7 @@ before_filter :check_student_logged_in!, :only => [:show]
 	end
 
 	def create
-		@job = Job.new(params[:job])
+		@job = current_user.jobs.build(params[:job])
 		
 			if @job.save
 				flash[:notice] = "Job Succesfully Posted"
@@ -48,6 +48,7 @@ before_filter :check_student_logged_in!, :only => [:show]
 	def destroy
 		@job = Job.find(params[:id])
 		@job.destroy
+		redirect_to root_path, :notice => "Job Succesfully Deleted"
 	end
 
 end
