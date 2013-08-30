@@ -13,19 +13,18 @@
 		<b><p>Needed</b>
 		<%= @job.needed %></p>
 		<b><p>Pay:</b>
-		<%= @job.pay %></p>
+		<%= @job.pay %> <%= @job.pay_type %> </p>
 		<b><p>Start Date:</b>
 		<%= @job.start_date %></p>
-		<!-- <b><p>How did you hear about us?</b> -->
-		<!-- <%= @job.how %></p> -->
-		<!-- <b><p>Hours:</b> -->
 		<b><p>Hours:</b>
 		<%= @job.hours %></p>
 		<b><p>Job Contact ID:</b>
 		<%= 27.to_s + @job.id.to_s  %> (email EMAIL@EMAIL.COM this number and we will securely email you the employer's contact information)</p>
-
 		<%= button_to "back", jobs_path, :class => 'btn btn-success' %>
+		<% if current_user.id == @job.user_id %>
 		<%= button_to "Delete", @job, :method => "delete", :confirm =>  "Are you sure?", :class => "btn btn-danger" %>
+		<% end %>
+
 		</div>
 	</div>
 </div>

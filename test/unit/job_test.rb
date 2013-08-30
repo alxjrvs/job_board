@@ -13,6 +13,7 @@ class JobTest < ActiveSupport::TestCase
   should belong_to(:user)
   should_not allow_value(7).for(:pay)
   should allow_value(8).for(:pay)
+  should validate_presence_of(:pay_type)
     
 
   test "Job won't save without attributes" do 
