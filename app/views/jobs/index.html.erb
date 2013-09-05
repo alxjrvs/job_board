@@ -15,7 +15,7 @@
 			</thead>
 			<% @jobs.each do |j| %>
 			<td><%=  link_to j.title, j %></td>
-			<td><%=  j.pay %></td>
+			<td><%=  j.pay %> <%= j.pay_type %></td>
 			<td><%=  j.location %></td>
 			<td><%=  j.needed %></td>
 			<td><%= j.start_date %></td>

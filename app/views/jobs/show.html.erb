@@ -19,7 +19,7 @@
 		<b><p>Hours:</b>
 		<%= @job.hours %></p>
 		<b><p>Job Contact ID:</b>
-		<%= 27.to_s + @job.id.to_s  %> (email EMAIL@EMAIL.COM this number and we will securely email you the employer's contact information)</p>
+		<%= 27.to_s + @job.id.to_s  %> (email EMAIL@EMAIL.COM this id number and we will securely email you the employer's contact information)</p>
 		<%= button_to "back", jobs_path, :class => 'btn btn-success' %>
 		<% if current_user.id == @job.user_id %>
 		<%= button_to "Delete", @job, :method => "delete", :confirm =>  "Are you sure?", :class => "btn btn-danger" %>
