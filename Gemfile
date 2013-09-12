@@ -12,7 +12,7 @@ end
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'therubyracer'
-
+gem 'unicorn'
 
 # Gems used only for assets and not required
 # in production environments by default.
