@@ -8,7 +8,7 @@
       <%= devise_error_messages! %>
 
       <div><%= f.label :email %>
-      <%= f.email_field :email, :autofocus => true %></div>
+      <%= f.email_field :email, :placeholder => "Must be .edu account", :autofocus => true %></div>
 
       <div><%= f.label :school %>
       <%= f.select :school, [["Berklee College of Music"],["Boston University"],["Boston College"],["Emerson College"],["Harvard University"],["MIT"],["Northeastern University"],["Suffolk University"],["Tufts University"]],:prompt => "Select Your School..." %></div>
