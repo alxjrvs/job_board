@@ -15,6 +15,7 @@ JobBoard::Application.routes.draw do
   match "party-help-catering", to: "jobs#index", :category => "Party Help/Catering"
   match "/research-focus-group", to: "jobs#index", :category => "Research/ FocusGroup"
   match "/yardwork", to: "jobs#index", :category => "Yardwork"
+  match "/landing", to: "static_pages#landing"
 
 
 
