@@ -1,21 +1,25 @@
 <% @title = "Hire Boston Students for Odd Jobs" %>	
 
-	<div class = "row" id = "login-bar">
+	<div id = "login-bar">
 		<div class = "container">
-				<div class = "span12">
-					<% if user_signed_in? == false && student_signed_in? == false %>
-					<div class = "text-right"><%= link_to "Student Sign In", new_student_session_path %></div>
-					<div class = "text-right"><%= link_to "Emoloyer Sign In", new_user_session_path %></div>
-					<% end %>
+				<div class = "row">
+					<div class = "span12">
+						<% if user_signed_in? == false && student_signed_in? == false %>
+						<div class = "text-right"><%= link_to "Student Sign In", new_student_session_path %></div>
+						<div class = "text-right"><%= link_to "Emoloyer Sign In", new_user_session_path %></div>
+						<% end %>
+					</div>
 				</div>
 		</div>
 	</div>
 <div class = "main-content">
 	<div class = "row" id = "main-body">
 	<div class = "container">
-			 <div class = "span12" id = "content">
-			   <h1 class = "text-center">Hire Boston Students for Odd Jobs</h1>
-			 </div>
+			<div class = "row"> 
+				<div class = "span12" id = "content">
+					<h1 class = "text-center">Hire Boston Students for Odd Jobs</h1>
+				</div>
+			</div>
 				
 			 <div class = "row">
 			   <div class = "span3 offset3">
