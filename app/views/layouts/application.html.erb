@@ -11,14 +11,14 @@
 </head>
   <%= render 'shared/navbar' %>
 <body>
-      <div id = "wrap">
+<div id = "wrap">
         <%= render :partial => "shared/flash", :locals => {:flash => flash} %>
         
         <%= yield %>
   
         <div id="push">
         </div>
-      </div>
-        <%= render "shared/footer" %>
+      </div> 
+        <%=  render "shared/footer" %> 
 </body>
 </html>
