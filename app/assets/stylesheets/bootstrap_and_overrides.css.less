@@ -1,0 +1,159 @@
+@import "twitter/bootstrap/bootstrap";
+body {padding-top: 40px;
+}
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings");
+@iconWhiteSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings-white");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: asset-url("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: asset-url("fontawesome-webfont.eot#iefix");
+@fontAwesomeWoffPath: asset-url("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: asset-url("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: asset-url("fontawesome-webfont.svg#fontawesomeregular");
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+
+      html,
+      body {
+        height: 100%;
+       }
+        /* The html and body elements cannot have any padding or margin. 
+       */
+
+       /*Wrapper for page content to push down footer */
+       #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%; 
+        margin: 0 auto -60px;
+      } 
+
+       /*Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: black;
+      }
+
+     #footer p {color: #B0B0B0;
+     				margin-top: 20px;
+     }
+
+#show-row {padding-top: 20px;}
+
+
+.landing-page-picture {background-image: url("boston.jpg");
+			 -webkit-background-size: cover;
+			    	-moz-background-size: cover;
+			    		-o-background-size: cover;
+			    			background-size: cover;
+}
+
+.landing-page-first-row {background-color: #E8E8E8;
+}
+
+.landing-page-first-row, .pick {background-color: #E8E8E8 ;
+}
+
+/*#footer {background-color: black; 
+			height: 150px; 
+}*/
+
+
+#home-page-header{font-family: europa, 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif; 
+					font-size: 4em; 
+		 				font-weight: 300;
+		 					padding-top: 30px;
+		 						line-height: 60px; 
+		 							color: white;
+		 								margin-top: 40px;
+}
+
+#home-button {margin-top: 30px; 
+				margin-bottom: 300px;
+}
+
+#login-bar {background-color: #87CEFA;
+}
+
+#login-bar a {color: #0033CC;}
+
+#login-form {margin-top: 20px;
+				margin-right: 0px;
+}
+
+.main-content {background-color: #F0F0F0 ;
+}
+
+
+#main-body {padding-bottom: 100px;background-color: white;
+}
+
+#content {margin-top: 75px;
+}
+
+.table {margin-top: 40px;
+}
+
+
+#row2 {margin-top: 20px;
+}
+
+#row3, #row4, #row5 {margin-top: 60px;
+}
+
+#row6 {margin-top: 80px;
+	  		margin-bottom: 40px;	
+}
+
+
+#categories {margin-top: 100px;
+				margin-bottom:20px;
+}
+
+#row2 {margin-top: 20px;
+}
+
+#row3, #row4, #row5 {margin-top: 60px;
+}
+
+
+#third-row-home-page {margin-top: 60px;
+}
+
+.row#talent-list {margin-bottom: 60px;}
+.row#talent-list li {font-size: 16pt;
+						line-height: 30pt;
+}
+
+#registration-row {margin-bottom: 120px;
+}
+
+#about1, 
+  #about2, 
+    #about3, 
+      #about4 {margin-bottom: 60px;
+}
+
+
