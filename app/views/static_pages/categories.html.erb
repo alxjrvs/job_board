@@ -1,16 +1,16 @@
 
 <% @title = "Categories" %>
 <div class = "container">
-<div class = "row" id = "categories">
-	<div class = "span4 offset4">
-		<%= link_to 'Child Care', childcare_path, :class => "btn btn-large btn-block" %>
-		<%= link_to 'Computer', computer_path, :class => "btn btn-large btn-block" %>
-		<%= link_to 'General', general_path, :class => "btn btn-large btn-block" %>
-		<%= link_to 'Home Services', '/home-services', :class => "btn btn-large btn-block" %>
-		<%= link_to 'Moving', moving_path, :class => "btn btn-large btn-block" %>
-		<%= link_to 'Party Help/Catering', '/party-help-catering', :class => "btn btn-large btn-block" %>
-		<%= link_to 'Research/Focus Group', '/research-focus-group', :class => "btn btn-large btn-block" %>
-		<%= link_to 'Yardwork', '/yardwork', :class => "btn btn-large btn-block" %>
-	</div>
-</div>
+  <div class = "row" id = "categories">
+    <div class = "span4 offset4">
+      <%= link_to 'Child Care', category_path(:childcare), :class => "btn btn-large btn-block" %>
+      <%= link_to 'Computer', computer_path, :class => "btn btn-large btn-block" %>
+      <%= link_to 'General', general_path, :class => "btn btn-large btn-block" %>
+      <%= link_to 'Home Services', '/home-services', :class => "btn btn-large btn-block" %>
+      <%= link_to 'Moving', moving_path, :class => "btn btn-large btn-block" %>
+      <%= link_to 'Party Help/Catering', '/party-help-catering', :class => "btn btn-large btn-block" %>
+      <%= link_to 'Research/Focus Group', '/research-focus-group', :class => "btn btn-large btn-block" %>
+      <%= link_to 'Yardwork', '/yardwork', :class => "btn btn-large btn-block" %>
+    </div>
+  </div>
 </div>

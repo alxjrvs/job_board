@@ -3,23 +3,15 @@ JobBoard::Application.routes.draw do
 
   devise_for :users
   resources :jobs
+
   match "/faq", to: "static_pages#faq"
   match "/home", to: "static_pages#home"
   match "/categories", to: "static_pages#categories"
   match "/about", to: "static_pages#about"
-  match "/childcare", to: "jobs#index", :category => "Child Care"
-  match "/computer", to: "jobs#index", :category => "Computer Help"
-  match "/general", to: "jobs#index", :category => "General"
-  match "/home-services", to: "jobs#index", :category => "Home Services"
-  match "/moving", to: "jobs#index", :category => "Moving"
-  match "party-help-catering", to: "jobs#index", :category => "Party Help/Catering"
-  match "/research-focus-group", to: "jobs#index", :category => "Research/ FocusGroup"
-  match "/yardwork", to: "jobs#index", :category => "Yardwork"
+
+  match "/:category", to: "jobs#index", as: :category
+
   match "/landing", to: "static_pages#landing"
-
-
-
-
 
 
   # The priority is based upon order of creation:
